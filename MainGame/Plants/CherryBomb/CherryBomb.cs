@@ -57,7 +57,7 @@ public partial class CherryBomb : Plants
 		_particleExplode1.Emitting = true;
 		_particleExplode2.Emitting = true;
 		_particleExplode3.Emitting = true;
-        MainGame.Camera.Shake(0.4f);
+		MainGame.Camera.Shake(0.4f);
 		await ToSignal(GetTree().CreateTimer(0.7f), "timeout");
 		FreePlant();
 	}
