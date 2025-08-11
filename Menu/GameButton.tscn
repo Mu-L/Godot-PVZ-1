@@ -8,9 +8,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5c348"]
 size = Vector2(115, 44)
 
-[node name="GameButton" type="Sprite2D" node_paths=PackedStringArray("main")]
+[node name="GameButton" type="Sprite2D"]
 script = ExtResource("5_vwuad")
-main = NodePath("")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_5c348")

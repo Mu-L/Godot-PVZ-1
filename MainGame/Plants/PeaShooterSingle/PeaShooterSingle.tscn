@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bh5ipjbx6k7py"]
+[gd_scene load_steps=28 format=3 uid="uid://bh5ipjbx6k7py"]
 
 [ext_resource type="Script" uid="uid://cdrujtqsasomx" path="res://MainGame/Plants/PeaShooterSingle/PeaShooterSingle.cs" id="1_1y4xh"]
 [ext_resource type="Texture2D" uid="uid://bde8hqnhy0hav" path="res://art/MainGame/Plants/PeaShooter/PeaShooter_backleaf.png" id="2_8gnc4"]
@@ -15,15 +15,163 @@
 [ext_resource type="Texture2D" uid="uid://2cey5khhsh6" path="res://art/MainGame/Plants/PeaShooter/PeaShooter_frontleaf_righttip.png" id="8_6nxol"]
 [ext_resource type="Texture2D" uid="uid://dnm5x4j1xjv0n" path="res://art/MainGame/Plants/PeaShooter/PeaShooter_frontleaf_lefttip.png" id="9_hnol1"]
 [ext_resource type="Texture2D" uid="uid://bh24x4q5el042" path="res://art/MainGame/Plants/PeaShooter/PeaShooter_sprout.png" id="12_kn5d0"]
-[ext_resource type="Texture2D" uid="uid://0artcn3mg8bc" path="res://art/MainGame/Plants/PeaShooter/PeaShooter_Head.png" id="13_nd4h7"]
+[ext_resource type="Texture2D" uid="uid://d301xyd8tipo8" path="res://art/MainGame/Plants/PeaShooter/PeaShooter_Head.png" id="13_nd4h7"]
 [ext_resource type="Texture2D" uid="uid://dsse36p2cqmuh" path="res://art/MainGame/Plants/PeaShooter/PeaShooter_mouth.png" id="14_ly4gj"]
 [ext_resource type="Animation" uid="uid://c4w15oxqancqv" path="res://MainGame/Plants/PeaShooterSingle/Head_Idle.tres" id="16_45rku"]
 [ext_resource type="Animation" uid="uid://cjgfbfe76tx2" path="res://MainGame/Plants/PeaShooterSingle/Head_Shooting.tres" id="17_6n7na"]
 [ext_resource type="Animation" uid="uid://cakd1xfg7v3ug" path="res://MainGame/Plants/PeaShooterSingle/Head_Shooting2.tres" id="17_ajeql"]
 
+[sub_resource type="Animation" id="Animation_ajeql"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Backleaf_left_tip:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0110133]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Backleaf_left_tip:skew")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-4e-07]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Backleaf_right_tip:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.005236]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Backleaf_right_tip:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Stalk_bottom:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Stalk_bottom:skew")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Stalk_top:rotation")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Stalk_top:skew")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Frontleaf_right_tip:rotation")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Frontleaf_right_tip:skew")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Frontleaf_left_tip:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Frontleaf_left_tip:skew")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_iv4oo"]
 _data = {
-&"Idle": ExtResource("2_x832e")
+&"Idle": ExtResource("2_x832e"),
+&"RESET": SubResource("Animation_ajeql")
 }
 
 [sub_resource type="Animation" id="Animation_ytrw4"]
@@ -60,6 +208,42 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Anim_sprout:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.799, 0.799)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Idle_mouth:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [2.07603e-05]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Idle_mouth:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-2.07603e-05]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_5nfmd"]
@@ -102,13 +286,13 @@ centered = false
 
 [node name="Backleaf_left_tip" type="Sprite2D" parent="."]
 position = Vector2(25, 53.9)
-rotation = 0.008727
+rotation = 0.0110133
 scale = Vector2(0.555, 0.555)
 texture = ExtResource("3_rbrxk")
 centered = false
 
 [node name="Backleaf_right_tip" type="Sprite2D" parent="."]
-position = Vector2(47, 52.9)
+position = Vector2(47.1, 52.9)
 rotation = 0.005236
 scale = Vector2(0.555, 0.555)
 texture = ExtResource("4_wlrgw")
@@ -116,17 +300,13 @@ centered = false
 
 [node name="Stalk_bottom" type="Sprite2D" parent="."]
 position = Vector2(36.1, 52.6)
-rotation = 0.034907
 scale = Vector2(0.555, 0.555)
-skew = -0.0122177
 texture = ExtResource("5_bu5ns")
 centered = false
 
 [node name="Stalk_top" type="Sprite2D" parent="."]
 position = Vector2(31, 45.3)
-rotation = 0.031416
 scale = Vector2(0.555, 0.555)
-skew = -0.0139627
 texture = ExtResource("6_b2clo")
 centered = false
 
@@ -138,14 +318,12 @@ centered = false
 
 [node name="Frontleaf_right_tip" type="Sprite2D" parent="."]
 position = Vector2(56.3, 56)
-rotation = -0.024435
 scale = Vector2(0.555, 0.555)
 texture = ExtResource("8_6nxol")
 centered = false
 
 [node name="Frontleaf_left_tip" type="Sprite2D" parent="."]
 position = Vector2(19.4, 61.6)
-rotation = 0.022689
 scale = Vector2(0.555, 0.555)
 texture = ExtResource("9_hnol1")
 centered = false
@@ -168,7 +346,7 @@ libraries = {
 
 [node name="Anim_sprout" type="Sprite2D" parent="Head"]
 position = Vector2(7.7, 27.7)
-rotation = -0.260055
+rotation = 6.02313
 scale = Vector2(0.799, 0.799)
 texture = ExtResource("12_kn5d0")
 centered = false
@@ -183,7 +361,7 @@ centered = false
 position = Vector2(52.4, 17.8)
 rotation = 2.07603e-05
 scale = Vector2(0.555, 0.5)
-skew = -2.08616e-05
+skew = -2.07603e-05
 texture = ExtResource("14_ly4gj")
 centered = false
 
